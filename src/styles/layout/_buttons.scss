@@ -1,0 +1,12 @@
+.btn-main {
+  border: 0;
+  border-radius: 2px;
+  padding: 5px 15px;
+  background-color: $background-item;
+  box-shadow: 7px 7px 12px -6px rgb(66, 68, 90);
+  color: black;
+
+  &:hover {
+    background: $background-hover;
+  }
+}

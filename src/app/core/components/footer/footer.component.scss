@@ -1,0 +1,16 @@
+@import '/src/styles/styles.scss';
+
+:host {
+  display: block;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 20px;
+    color: $color-primary;
+    background-color: $background-secondary;
+  }
+}
