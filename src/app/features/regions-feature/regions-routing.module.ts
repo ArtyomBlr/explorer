@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { RegionsComponent } from './regions.component';
+import { RegionsComponent } from './regions/regions.component';
 import { RegionComponent } from './region/region.component';
-import { CountryComponent } from './region/country/country.component';
+import { CountryComponent } from './country/country.component';
 
 const routes: Routes = [
   { 
@@ -12,13 +12,11 @@ const routes: Routes = [
   },
   {
     path: ':id',
-    component: RegionComponent,
-    children: [
-      {
-        path: 'country/:countryId',
-        component: CountryComponent
-      }
-    ]
+    component: RegionComponent
+  },
+  {
+    path: 'country/:cca',
+    component: CountryComponent
   },
   {
     path: '**',
