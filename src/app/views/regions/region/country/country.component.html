@@ -1,0 +1,22 @@
+<ng-container *ngIf="country$ | async as country; else loader">
+  <div class="country">
+    <h2 class="h2">region: {{ country.name?.common }}</h2>
+    <div class="header table-cell">
+      <img [src]="country.flags.png" [alt]="country?.flags.alt" />
+      <p>{{ country.fifa }}</p>
+    </div>
+    <div class="table-cell">
+      Capital: {{ country.capital[0] }}
+    </div>
+    <div class="table-cell" *ngFor="let currency of country.currencies | keyvalue">
+      <!-- Currency: {{ currency?.value.symbol }} -->
+    </div>
+    <div class="table-cell">
+      Population: {{ country.population | population }}
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #loader>
+  <app-loader></app-loader>
+</ng-template>

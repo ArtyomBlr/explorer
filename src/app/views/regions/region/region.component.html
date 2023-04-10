@@ -1,0 +1,16 @@
+<ng-container *ngIf="countryList$ | async as list; else loader">
+  <h1 class="h1">region: {{ regionName$ | async }}</h1>
+  <div class="countries">
+    <div 
+      class="countries__country" 
+      *ngFor="let country of countryList$ | async"
+      [routerLink]="['/region', '/europe', 'country', '/poland']">
+      <img [src]="country.flags.png" [alt]="country.flags.alt" />
+      <p>{{ country.name.common }}</p>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #loader>
+  <app-loader></app-loader>
+</ng-template>

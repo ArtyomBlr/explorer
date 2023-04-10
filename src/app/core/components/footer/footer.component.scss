@@ -1,0 +1,36 @@
+@import '/src/styles/styles.scss';
+
+:host {
+  display: block;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 20px;
+    color: $color-primary;
+    background-color: $background-secondary;
+
+    &__logo {
+      margin-bottom: 20px;
+    }
+
+    &__contact-info {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: $color-primary;
+        margin-left: 10px;
+
+        &:hover {
+          color: $color-hover;
+        }
+      }
+    }
+  }
+}

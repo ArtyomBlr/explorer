@@ -1,1 +1,4 @@
-<p>header works!</p>
+<div class="header">
+  <a routerLink="/" class="header__logo logo">Explorer</a>
+  <button *ngIf="isHomePage$ | async" class="header__btn" (click)="goBack()">Back</button>
+</div>
