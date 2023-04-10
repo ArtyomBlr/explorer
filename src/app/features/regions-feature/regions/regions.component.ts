@@ -13,8 +13,7 @@ export class RegionsComponent {
 
   // public regions$ = this.locationService.getRegions()
   //   .pipe(
-  //     catchError(() => of([])),
-  //     shareReplay({ refCount: false, bufferSize: 1 })
+  //     catchError(() => of([]))
   //   );
   
   public regions = REGIONS;
