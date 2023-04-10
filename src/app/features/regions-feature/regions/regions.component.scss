@@ -1,0 +1,40 @@
+@import '/src/styles/styles.scss';
+
+:host {
+  display: block;
+  flex: 1;
+  margin: 10px;
+  overflow: auto;
+
+  .h1 {
+    text-align: center;
+  }
+
+  .regions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__region {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 18%;
+      min-width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      background-color: $background-item;
+      box-shadow: 7px 7px 12px -6px rgb(66, 68, 90);
+      color: black;
+      margin: 10px;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $background-hover;
+      }
+    }
+  }
+}

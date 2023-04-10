@@ -1,0 +1,8 @@
+<h1 class="h1">Choose the Region</h1>
+<div class="regions">
+  <ng-container *ngFor="let region of regions">
+    <div class="regions__region" [routerLink]="region | lowercase">
+      {{ region }}
+    </div>
+  </ng-container>
+</div>
