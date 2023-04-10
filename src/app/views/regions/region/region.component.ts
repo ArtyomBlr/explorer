@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { BehaviorSubject, Observable, catchError, of, shareReplay, switchMap } from 'rxjs';
+import { BehaviorSubject, Observable, catchError, shareReplay, switchMap } from 'rxjs';
 
 import { LocationService } from 'src/app/core/services/location.service';
 

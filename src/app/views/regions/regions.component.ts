@@ -16,8 +16,6 @@ export class RegionsComponent {
   //     catchError(() => of([])),
   //     shareReplay({ refCount: false, bufferSize: 1 })
   //   );
-
-  public constructor() {}
   
   public regions = REGIONS;
 }
