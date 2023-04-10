@@ -12,7 +12,7 @@ import { Country } from 'src/app/core/models/country.model';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class RegionComponent {
-  public regionName$ = new BehaviorSubject<any>('');
+  public regionName$ = new BehaviorSubject<string>('');
 
   public countryList$: Observable<Country[]> = this.route.params
     .pipe(
